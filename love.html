@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>💖 Too Much Love Ahead 🐼🎂</title>
+
+    <!-- Google Fonts -->
+
+    <!-- Background Music -->
+
+    <audio id="bg-music" autoplay loop>
+      <source src="love.song.mp3" type="audio/mpeg" />
+    </audio>
+
+    <style>
+      /* Fade-in Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      body {
+        background-image: url("digital-image-of-cat.png.png");
+        background-repeat: repeat;
+        background-size: 500px auto;
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 50px;
+        color: #080808;
+        animation: fadeIn 1.2s ease-in-out;
+        
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(249, 176, 189, 0.4); /* soft pink overlay */
+        z-index: -1;
+      }
+
+      h1 {
+        font-family: "Dancing Script", cursive;
+        font-size: 50px;
+        color: #f3284e;
+        position: relative;
+        z-index: 1;
+        animation: fadeIn 1.4s ease-in-out;
+      }
+
+      p {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        max-width: 700px;
+        margin: auto;
+        line-height: 1.6;
+        position: relative;
+        z-index: 1;
+        animation: fadeIn 1.6s ease-in-out;
+      }
+
+      .photo {
+        margin-top: 30px;
+        position: relative;
+        z-index: 1;
+        animation: fadeIn 1.8s ease-in-out;
+      }
+
+      .photo img {
+        max-width: 250px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+      .slideshow {
+        margin-top: 30px;
+        position: relative;
+        max-width: 300px;
+        margin: 30px auto;
+      }
+
+      .slideshow img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        display: none;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .slideshow img.active {
+        display: block;
+      }
+
+      .footer {
+        margin-top: 40px;
+        font-size: 20px;
+        color: #000000;
+        position: relative;
+        z-index: 1;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      .quote p {
+        font-style: italic;
+        font-size: 22px;
+        color: #cc3366;
+        margin-top: 30px;
+        animation: fadeIn 2.2s ease-in-out;
+      }
+
+      .divider {
+        border: none;
+        height: 2px;
+        background: linear-gradient(to right, #ff99aa, #ffffff, #ff99aa);
+        margin: 30px 0;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        background: #ff6699;
+        color: white;
+        border-radius: 25px;
+        cursor: pointer;
+        animation: fadeIn 2.4s ease-in-out;
+      }
+
+      #secret {
+        display: none;
+        font-size: 20px;
+        color: #c71585;
+        margin-top: 20px;
+        animation: fadeIn 2.6s ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>🎂💐 Happy Birthday, Mero Pukuleee 💖🐼</h1>
+
+    <p>
+      <strong>Pukuleee</strong> ❤️ You’re not just my girlfriend — you’re my
+      peace, my motivation, and the most beautiful part of my life. I don’t know
+      what I did to deserve <strong>you</strong>, but I’m grateful for you every
+      single day. Today is all about you — your smile, your dreams, your
+      happiness. I hope all your dreams come true, and may this year bring you
+      more love, growth, laughter, and magic than ever before. You are the
+      reason I believe in love. You’re my favorite person to talk to, to laugh
+      with, to grow with — and one day, to grow old with. I love you endlessly,
+      deeply, and truly. No matter where life takes us, I’ll always be by your
+      side — loving you, holding your hand, cheering for you. 🌻 Happy Birthday
+      once again, Mero Pukuleee 💖
+    </p>
+
+    <div class="slideshow">
+      <img src="IMG-20250715-WA0009.jpg" class="active" />
+      <img src="IMG-20250715-WA0010.jpg" />
+      <img src="IMG-20250715-WA0011.jpg" />
+      <img src="IMG-20250715-WA0013.jpg" />
+      <img src="IMG-20250715-WA0012.jpg" />
+      <img src="IMG-20250715-WA0008.jpg" />
+      <img src="IMG-20250715-WA0007.jpg" />
+      <img src="IMG-20250715-WA0004.jpg" />
+      <img src="IMG-20250715-WA0005.jpg" />
+      <img src="IMG-20250715-WA0006.jpg" />
+    </div>
+
+    <!-- Divider -->
+    <hr class="divider" />
+
+    <!-- Love Quote -->
+    <div class="quote">
+      <p>“You’re the calm in my storm and the joy in my soul.” 💌</p>
+    </div>
+
+    <!-- Surprise Button -->
+    <button onclick="document.getElementById('secret').style.display='block'">
+      💌 Tap for Surprise
+    </button>
+
+    <!-- Hidden Love Note -->
+    <p id="secret">
+      You are the best thing that ever happened to me. I love you more than
+      anything! 💖
+    </p>
+
+    <!-- Footer -->
+    <div class="footer">
+      Forever yours,<br />
+      <strong>Your Lobbay 💕</strong>
+    </div>
+    <script>
+      const slides = document.querySelectorAll(".slideshow img");
+      let current = 0;
+
+      setInterval(() => {
+        slides[current].classList.remove("active");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("active");
+      }, 2500);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const music = document.getElementById("bg-music");
+
+        // Try to autoplay directly
+        music.play().catch(() => {
+          // If autoplay blocked, wait for first user interaction
+          const unlock = () => {
+            music.play();
+            document.removeEventListener("click", unlock);
+            document.removeEventListener("touchstart", unlock);
+          };
+          document.addEventListener("click", unlock);
+          document.addEventListener("touchstart", unlock);
+        });
+      });
+    </script>
+  </body>
+</html>
