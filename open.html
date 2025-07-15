@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💖 Today's Birthday Girl 💘</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif'); /* Cat animation background */
+      background-size: cover;
+      background-repeat: repeat;
+      text-align: center;
+      padding: 60px 20px;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #ff66a3;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #ff3385;
+      margin-bottom: 30px;
+    }
+
+    .question-box {
+      background: #ffe6f0 url('https://www.transparenttextures.com/patterns/hearts.png'); /* Light pink with hearts */
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(255, 102, 153, 0.2);
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      width: 80%;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 25px;
+      font-size: 16px;
+      background-color: #ff4d88;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .response {
+      font-size: 16px;
+      color: #cc0066;
+      margin-top: 10px;
+    }
+
+    #finalMessage {
+      font-size: 20px;
+      color: #d40023;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎀 Today’s Birthday Girl 💘</h1>
+  <h2>Answer these cute questions to unlock your surprise 😚</h2>
+
+  <!-- Question 1 -->
+  <div class="question-box">
+    <p>1. How old will you be today?</p>
+    <input type="number" id="q1">
+    <br>
+    <button onclick="checkQ1()">Submit</button>
+    <p id="r1" class="response"></p>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="question-box">
+    <p>2. What do I call you?</p>
+    <input type="text" id="q2">
+    <br>
+    <button onclick="checkQ2()">Submit</button>
+    <p id="r2" class="response"></p>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="question-box">
+    <p>3. What do you call me when you're angry?</p>
+    <input type="text" id="q3">
+    <br>
+    <button onclick="checkQ3()">Submit</button>
+    <p id="r3" class="response"></p>
+  </div>
+
+  <!-- Question 4 -->
+  <div class="question-box">
+    <p>4. What do I always say I want to hold in my hands when we meet?</p>
+    <input type="text" id="q4">
+    <br>
+    <button onclick="checkQ4()">Submit</button>
+    <p id="r4" class="response"></p>
+  </div>
+
+  <div id="finalMessage"></div>
+
+  <script>
+    let q1done = false, q2done = false, q3done = false, q4done = false;
+
+    function checkQ1() {
+      const ans = document.getElementById('q1').value;
+      if (parseInt(ans) === 22) {
+        document.getElementById('r1').innerText = '🥹 Mero Pukulee abo didi vayo 👀👀';
+        q1done = true;
+        checkAll();
+      } else {
+        document.getElementById('r1').innerText = 'Nooo bubu 🥺';
+      }
+    }
+
+    function checkQ2() {
+      const ans = document.getElementById('q2').value.trim().toLowerCase();
+      if (ans === 'pukulee') {
+        document.getElementById('r2').innerText = '😘 Mero Pukulee ';
+        q2done = true;
+        checkAll();
+      } else {
+        document.getElementById('r2').innerText = 'Nha  😢';
+      }
+    }
+
+    function checkQ3() {
+      const ans = document.getElementById('q3').value.trim().toLowerCase();
+      if (ans === 'badhar' || ans === 'monkey') {
+        document.getElementById('r3').innerText = '😂 Hait hehe 😄';
+        q3done = true;
+        checkAll();
+      } else {
+        document.getElementById('r3').innerText = 'Try again ghussa mat hone 🥺';
+      }
+    }
+
+    function checkQ4() {
+      const ans = document.getElementById('q4').value.trim().toLowerCase();
+      if (ans === 'boobies') {
+        document.getElementById('r4').innerText = '🖤 Maff Karna Dallu... BOOOOBIES 🌚😏';
+        q4done = true;
+        checkAll();
+      } else {
+        document.getElementById('r4').innerText = 'Hehe not that one 😆';
+      }
+    }
+
+    function checkAll() {
+      if (q1done && q2done && q3done && q4done) {
+        document.getElementById('finalMessage').innerHTML =
+          '🎉 I love you Pukulee! I hope you like my little surprise 💖<br><br><a href="love.html" style="text-decoration:none;"><button>🎁 Open Surprise 🎀</button></a>';
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+
+
